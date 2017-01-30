@@ -1,0 +1,704 @@
+/***********************
+ *                     *
+ *     Tzook Asraf     *      **********  **********  **********
+ *   BWEBI Style CSS   *      *           *           *
+ *                     *      *           **********  **********
+ *       Version       *      *                    *           *
+ *         1.3         *      **********  **********  **********
+ *                     *
+ ***********************
+
+
+/* Colors */
+$bwebi-color: #57A0D7;
+$design-color: #80CBC4;
+$development-color: #FECC81;
+$marketing-color: #C694C3;
+
+$primary-text-color: #37474F;
+$secondary-text-color: #B0BEC5;
+$disable-text-color: #E5E8EA;
+$bg-text-color: #ECEFF0;
+
+$logo-text-color: #dde2e6;
+
+$danger-color: #E53A35;
+$warning-color: #FCB316;
+$success-color: #66BB6A;
+
+/* Fonts */
+@import url('../font_files/fonts.css');
+$main-font: 'almoni-dl', sans-serif;
+$main-font-size: 19px;
+$light: 300;
+$regular:400;
+$bold: 700;
+$black: 900;
+
+/* logo */
+$logo-font: 'Vermin Vibes 2 Soft', sans-serif;
+$svg-arrow-big:   path('M 8.57 18.3 V 17.2 c 0 -0.1 0 -0.2 0.1 -0.2 l 9.07 -4.7 h 0 L 8.67 7.6 c -0.1 0 -0.1 -0.1 -0.1 -0.2 V 6.2 c 0 -0.2 0.2 -0.3 0.3 -0.2 l 10.47 5.5 c 0.1 0 0.1 0.1 0.1 0.2 v 1.1 c 0 0.1 0 0.2 -0.1 0.2 L 8.87 18.5 C 8.77 18.6 8.57 18.5 8.57 18.3 Z');
+$svg-arrow-small: path('M 21.33 19.8 a 0.1 0.1 0 0 1 -0.1 0.1 L 13.55 24 c -0.1 0 -0.2 0 -0.2 -0.1 V 22.6 a 0.1 0.1 0 0 1 0.1 -0.1 l 6 -3.1 c 0.1 0 0.1 -0.2 0 -0.2 l -4.68 -2.4 c -0.1 0 -0.1 -0.2 0 -0.2 l 1.2 -0.6 H 16 l 5.18 2.8 l 0.1 0.1 Z');
+$svg-b: path('M 38.69 2.14 A 1.9 1.9 0 0 1 40.83 0 H 60.1 q 8.57 0 8.57 8.57 q 0 4.28 -2.16 6.43 q 2.16 2.14 2.16 6.43 Q 68.67 30 60.1 30 H 40.83 a 1.89 1.89 0 0 1 -2.14 -2.14 Z M 60.1 12.86 q 4.28 0 4.29 -4.28 T 60.1 4.28 H 43 v 8.57 Z m 0 4.29 H 43 v 8.57 H 60.1 q 4.28 0 4.29 -4.29 T 60.1 17.14');
+$svg-w: path('M 86.86 11.76 L 97.56 22.46 V 2.14 a 2.14 2.14 0 1 1 4.28 0 V 27.86 A 1.89 1.89 0 0 1 99.7 30 a 2.9 2.9 0 0 1 -1.11 -0.19 l -0.71 -0.62 l -11 -11 l -11 11 l -0.73 0.62 A 2.82 2.82 0 0 1 74 30 a 1.89 1.89 0 0 1 -2.14 -2.14 V 2.14 a 2.14 2.14 0 1 1 4.28 0 V 22.46 Z');
+$svg-e: path('M 105 2.14 A 1.89 1.89 0 0 1 107.19 0 h 25.7 A 1.89 1.89 0 0 1 135 2.14 a 1.89 1.89 0 0 1 -2.14 2.14 h -25.7 A 1.89 1.89 0 0 1 105 2.14 M 105 15 a 1.89 1.89 0 0 1 2.14 -2.14 h 25.7 A 1.89 1.89 0 0 1 135 15 a 1.89 1.89 0 0 1 -2.14 2.14 h -25.7 A 1.89 1.89 0 0 1 105 15 m 0 12.86 a 1.89 1.89 0 0 1 2.14 -2.14 h 25.7 A 1.89 1.89 0 0 1 135 27.86 A 1.89 1.89 0 0 1 132.89 30 h -25.7 A 1.89 1.89 0 0 1 105 27.86');
+$svg-b2:path('M 138.23 2.14 A 1.89 1.89 0 0 1 140.37 0 h 19.27 q 8.57 0 8.57 8.57 q 0 4.28 -2.16 6.43 q 2.16 2.14 2.16 6.43 q 0 8.57 -8.57 8.57 H 140.37 a 1.89 1.89 0 0 1 -2.14 -2.14 Z m 21.41 10.71 q 4.28 0 4.28 -4.28 t -4.28 -4.29 H 142.51 v 8.57 Z m 0 4.29 H 142.51 v 8.57 h 17.13 q 4.28 0 4.28 -4.29 t -4.28 -4.29');
+$svg-i: path('M 171.41 2.14 a 2.14 2.14 0 1 1 4.28 0 V 27.86 a 2.14 2.14 0 1 1 -4.28 0 Z');
+
+
+/* Pattern BWEBI */
+$pattern-img: url('../images/pattern-bwebi.svg');
+
+
+/************************************************/
+
+
+/* logo CSS ***********************************************************************************************/
+
+svg {
+  height: inherit;
+}
+
+.logo-text-b       {  d: $svg-b;  fill: $logo-text-color; }
+.logo-text-w       {  d: $svg-w;  fill: $logo-text-color; }
+.logo-text-e       {  d: $svg-e;  fill: $logo-text-color; }
+.logo-text-b2      {  d: $svg-b2; fill: $logo-text-color; }
+.logo-text-i       {  d: $svg-i;  fill: $logo-text-color; }
+
+.logo-arrow-big    {  d: $svg-arrow-big;     fill: white; }
+.logo-arrow-small  {  d: $svg-arrow-small;   fill: white; }
+
+.logo {
+  height: 25px;
+  text-align: center;
+}
+
+.logo-team {
+  display: inline-block;
+  padding: 2rem;
+  direction: ltr;
+}
+
+.logo-team-text {
+  font-size: 19px;
+}
+
+.logos-teams-area {
+  text-align: center;
+}
+
+.svg-bwebi-color {
+  fill: $bwebi-color;
+  color: $bwebi-color;
+}
+
+.svg-design-color {
+  fill: $design-color;
+  color: $design-color;
+}
+
+.svg-development-color {
+  fill: $development-color;
+  color: $development-color;
+}
+
+.svg-marketing-color {
+  fill: $marketing-color;
+  color: $marketing-color;
+}
+
+.svg-white-color {
+  fill: white;
+  color: white;
+}
+
+/* end of logo CSS ****************************************************************************************/
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* HTML tags */
+
+* {
+  transition: all 0.5s ease;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: $main-font;
+  font-weight: $light;
+  font-size: $main-font-size;
+  color: $primary-text-color;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $bwebi-color;
+}
+
+section {
+  padding: 20px 0;
+}
+
+ul,ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+li {
+  padding: 15px;
+  text-align: center;
+  background-color: #FDFDFD;
+}
+
+li:nth-child(2n+2) {
+  background-color: #F9FAFA;
+}
+
+i {
+  margin-left: 5px;
+}
+
+h1{
+  font-size: 80px;
+  font-weight: $black;
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: $black;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  border-bottom: 1px solid;
+  margin: 0;
+  padding: 15px;
+}
+
+h4 {
+  font-size: 35px;
+  font-weight: $black;
+  margin: 0;
+}
+
+h5 {
+  font-size: 40px;
+  font-weight: $light;
+  margin: 0;
+}
+
+p {
+  line-height: 1.3;
+  margin: 0;
+  padding: 15px;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  font-family: $main-font;
+  font-size: 17px;
+  font-weight: $light;
+  padding: 8px 8px 10px 10px;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 4px;
+  transition: none;
+  color: white;
+}
+
+input:focus {
+  border-bottom: 2px solid white;
+}
+
+input:focus + label {
+  opacity: 1;
+}
+
+label {
+  font-size: 24px;
+  font-weight: $bold;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Custom HTML Tags */
+
+.a-white-decoration {
+  color: white;
+  opacity: 0.7;
+}
+
+.a-white-decoration:hover {
+  opacity: 1;
+}
+
+.line-h2 {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    border-top: 2px solid $disable-text-color;
+    content:"";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+  }
+
+  .readable-h2 {
+    background: white;
+    padding: 0 30px;
+  }
+
+}
+
+.input-container {
+  margin: 10px 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.7);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.7);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255, 255, 255, 0.7);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Layout CSS */
+
+.middle-alignment {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+
+
+/* Typography CSS */
+
+.typography-light {
+  font-weight: $light;
+}
+
+.typography-regular {
+  font-weight: $regular;
+}
+
+.typography-bold {
+  font-weight: $bold;
+}
+
+.typography-black {
+  font-weight: $black;
+}
+
+.disable-text {
+  color: $disable-text-color;
+}
+
+
+/* Custom Component */
+
+      /* Process Slider */
+
+      .slider {
+        width: 84vw;
+        position: relative;
+        padding-top: 320px;
+        margin: 0 auto 90px;
+      }
+
+      .slider>div {
+        position: absolute;
+        left: 0; top: 0;
+        transition: all 0.5s;
+      }
+
+      .slider input[name='slide_switch'] {
+        display: none;
+      }
+
+      .slider label {
+        float: left;
+        cursor: pointer;
+        opacity: 0.6;
+      }
+
+      .slider label img {
+        display: block;
+      }
+
+      .slider label i {
+        font-size: 50px;
+        float: left;
+        margin: auto;
+        position: relative;
+        top: 40px;
+        right: 9px;
+      }
+
+      .slider label span {
+        display: block;
+        margin: 0 30px;
+        width: 140px;
+        font-size: $main-font-size;
+        font-weight: $regular;
+        text-align: center;
+        padding-left: 15px;
+      }
+
+      .slider input[name='slide_switch']:checked+label {
+        opacity: 1;
+      }
+
+      .slider input[name='slide_switch'] ~ div {
+        opacity: 0;
+        transform: scale(1.1);
+      }
+
+      .slider input[name='slide_switch']:checked+label+div {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+/* HTML CSS */
+
+header{
+  position: absolute;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 40px 45px;
+  z-index: 1
+}
+
+nav {
+  display: inline-block;
+  margin: 2px 0;
+}
+
+.nav-links {
+  font-size: 20px;
+  margin-left: 20px;
+  opacity: 0.3;
+}
+
+.nav-links:hover {
+  opacity: 1;
+}
+
+.logo-header {
+  display: inline-block;
+  float: left;
+  padding: 0;
+}
+
+.multi-logo {
+  width: 147px;
+  height: 47px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.multi-display {
+  margin-bottom: 10px;
+}
+
+.multi-logo:hover .multi-display {
+  opacity: 0;
+  margin-top: -47px;
+}
+
+.hero {
+  background-image: url("../images/mainimage.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.title-container {
+  height: 30vh;
+  margin-right: 4rem;
+}
+
+.hero-subtitle {
+  display: block;
+  font-weight: $light;
+  font-size: 30px;
+  margin-right: 2px;
+
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.quote-icon {
+  font-size: 4em !important;
+  line-height: 1.5 !important;
+  float: right;
+  margin-left: 25px;
+}
+
+.quote-text {
+  color: $secondary-text-color;
+  border-right: 2px solid $design-color;
+  padding: 5px 25px 2px 0;
+}
+
+.quote-name {
+  display: block;
+  direction: ltr;
+  font-size: 20px;
+  font-weight: $bold;
+  margin-top: 8px;
+}
+
+.slider-text {
+  width: 65%;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.slider-img {
+  width: 35%;
+  max-height: 320px;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.branding-packages {
+  width: 85vw;
+  margin: auto;
+}
+
+.package {
+  width: 32.3%;
+  float: right;
+  margin: 0 0.5%;
+}
+
+.package-img {
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
+.package-title {
+  margin-bottom: 5px;
+  margin-top: -45px;
+  padding-top: 55px;
+  padding-bottom: 20px;
+  border-top: 2px solid $design-color;
+}
+
+.package-button {
+  color: $design-color;
+  border-bottom: 2px solid $design-color;
+  padding: 25px 0;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.form-package-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.form-package {
+  text-align: right;
+  padding-top: 140px;
+  color: white;
+}
+
+.form-package-button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 25px 10px;
+  font-size: 30px;
+  font-weight: $bold;
+  margin: 30px 0 30px 0;
+  border-radius: 10px;
+  color: $design-color;
+}
+
+.form-package-button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.get-form {
+  background-image: linear-gradient(rgba(128, 203, 196, 0) 0%, rgba(128, 203, 196, 0.8) 35%, rgb(128, 203, 196) 70%, rgb(128, 203, 196) 100%);
+  position: relative;
+  padding: 0 0 50px 0;
+  bottom: -660px;
+}
+
+.label-b {
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 80px 10px 15px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #f9fafa;
+  opacity: 0;
+}
+
+#open-form-s input:checked ~ .get-form {  bottom: 0;  }
+#open-form-s input:checked ~ .label-b  {  opacity: 1; }
+
+#open-form-m input:checked ~ .get-form {  bottom: 0;  }
+#open-form-m input:checked ~ .label-b  {  opacity: 1; }
+
+#open-form-l input:checked ~ .get-form {  bottom: 0;  }
+#open-form-l input:checked ~ .label-b  {  opacity: 1; }
+
+.project-slider {
+  width: 100vw;
+  height: 100vh;
+}
+
+.project-slider-arrow {
+  float: left;
+  height: 100vh;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 5vw !important;
+  color: $design-color;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  font-size: 6vw !important;
+}
+
+.project-slider-images {
+  float: left;
+  width: 80%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-project-slider {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.img-pic {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  opacity: 1;
+}
+
+#project-slider-controller input[name='project_switch'] {
+  display: none;
+}
+
+#project-slider-controller input[name='project_switch']:checked ~ #img1-pic {  opacity: 0;  }
+#project-slider-controller input[name='project_switch']:checked ~ #img2-pic {  opacity: 0;  }
+
+footer {
+  background-color: $primary-text-color;
+  min-height: 110px;
+  box-sizing: border-box;
+  padding: 30px 45px;
+}
+
+.social-icons {
+  display: inline-block;
+  float: left;
+  padding: 1rem;
+}
+
+address {
+  font-style: normal;
+  font-size: 15px;
+  display: inline-block;
+  float: left;
+  margin: 6px 0px 0px 40px;
+}
+
+.footer-logo {
+  padding: 10px 15px;
+  border-left: 1px solid $logo-text-color;
+}
+
+.bw-logo-footer {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tzook-netcraft {
+  background-color: rgb(67, 86, 95);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+
